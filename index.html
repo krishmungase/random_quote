@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes_Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex items-center justify-center flex-col min-h-screen min-w-screen bg-[#111729]" style="font-family: 'Outfit', sans-serif;">
+        <div class="bg-[#20293A] w-2/5 min-h-64 rounded-xl text-center p-7 px-15 mb-8" style="background-image: url(img/bg-image-random-quote.svg); background-position: right bottom; background-repeat: no-repeat; background-size: cover;">
+            <p class="text-[#fff] text-xl mb-4">Quote of the Day</p>
+            <div class="space-x-3 font-thin text-xs mb-2">
+                <span class="border border-[#6466E9] p-1 text-[#6466E9] rounded-xl">Famous Quotes</span>
+                <span class="border border-[#6466E9] p-1 text-[#6466E9] rounded-xl">Inspirational</span>
+            </div>
+            <p class="text-xl text-[#97A3B6] px-15 py-6" id="quote">"Learn from yesterday, live for today, hope for tomorrow."</p>
+            <p class="text-[#fff] text-right mr-9 px-10" id="author">Albert Einstein</p>
+        </div>
+        <div class=" flex items-center space-x-3">
+            <span class="space-x-3 border border-[#4A5567] px-5 py-2 rounded-xl cursor-pointer hover:border-[#6466E9]" onclick="getquote(apiurl)"><img src="img/Regroup.svg" alt=""></span>
+            <div class="border-l border-[#4A5567] h-6"></div>
+            <span class="space-x-3 border border-[#4A5567] px-5 py-2 rounded-xl cursor-pointer hover:border-[#6466E9]"><img src="img/link.svg" alt="" id="copy"></span>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
